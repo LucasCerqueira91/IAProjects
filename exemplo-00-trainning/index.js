@@ -33,9 +33,9 @@ async function trainModel(inputXs, outputYs) {
 }
 
 
-async function predict(model, pessoa) {
+async function predict(model, person) {
     // transformar o array js para o tensor (tfjs)
-    const tfInput = tf.tensor2d(pessoa)
+    const tfInput = tf.tensor2d(person)
 
     // Faz a predição (output será um vetor de 3 probabilidades)
     const pred = model.predict(tfInput)
@@ -79,3 +79,11 @@ const personTensorNormalized = [
         0     // localização Curitiba
     ]
 ]
+
+
+const predictions = await predict(model, personTensorNormalized)
+const results = predictions
+    .sort((a, b) => b.prob - a.prob)
+    .map(p => `${labelsNomes[p.index]} (${(p.prob * 100).toFixed(2)}%)`)
+    .join('\n')
+console.log(results)
