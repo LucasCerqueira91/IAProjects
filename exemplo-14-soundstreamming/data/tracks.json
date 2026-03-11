@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "Blinding Lights", "artist": "The Weeknd", "genre": "pop", "durationMs": 200040 },
+  { "id": 2, "name": "Levitating", "artist": "Dua Lipa", "genre": "pop", "durationMs": 203053 },
+  { "id": 3, "name": "Flowers", "artist": "Miley Cyrus", "genre": "pop", "durationMs": 200160 },
+  { "id": 4, "name": "Smooth", "artist": "Santana", "genre": "rock", "durationMs": 296826 },
+  { "id": 5, "name": "Good 4 U", "artist": "Olivia Rodrigo", "genre": "pop", "durationMs": 178786 },
+  { "id": 6, "name": "Shape of You", "artist": "Ed Sheeran", "genre": "pop", "durationMs": 233713 },
+  { "id": 7, "name": "Uptown Funk", "artist": "Bruno Mars", "genre": "funk", "durationMs": 269146 },
+  { "id": 8, "name": "Smells Like Teen Spirit", "artist": "Nirvana", "genre": "rock", "durationMs": 301200 },
+  { "id": 9, "name": "Thinking Out Loud", "artist": "Ed Sheeran", "genre": "pop", "durationMs": 281640 },
+  { "id": 10, "name": "Back in Black", "artist": "AC/DC", "genre": "rock", "durationMs": 255386 },
+  { "id": 11, "name": "Treasure", "artist": "Bruno Mars", "genre": "funk", "durationMs": 178973 },
+  { "id": 12, "name": "Bad Guy", "artist": "Billie Eilish", "genre": "pop", "durationMs": 194168 },
+  { "id": 13, "name": "Highway to Hell", "artist": "AC/DC", "genre": "rock", "durationMs": 208413 },
+  { "id": 14, "name": "24K Magic", "artist": "Bruno Mars", "genre": "funk", "durationMs": 226146 }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundStreaming — Recomendação de músicas por perfil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="main">
+    <h1>SoundStreaming — Recomendação por perfil</h1>
+    <p class="lead text-muted">Usuários com estilos diferentes; novo usuário sem histórico recebe sugestões com base no perfil (idade e padrões do modelo).</p>
+
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h4>Perfil do usuário</h4>
+          </div>
+          <div class="card-body">
+            <form id="userForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="userSelect" class="form-label">Selecionar usuário</label>
+                  <select class="form-select" id="userSelect">
+                    <option value="">-- Selecione um usuário --</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="userAge" class="form-label">Idade</label>
+                  <input type="number" class="form-control" id="userAge" disabled />
+                </div>
+              </div>
+            </form>
+            <div id="pastListenedContainer" class="mt-4">
+              <h5>Músicas na minha lista</h5>
+              <div id="pastListenedList" class="row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h4>Modelo de recomendação</h4>
+          </div>
+          <div class="card-body">
+            <div class="model-controls d-flex gap-2">
+              <button id="trainModelBtn" class="btn btn-primary train-model-btn">
+                <i class="bi bi-cpu"></i> Treinar modelo
+              </button>
+              <button disabled id="runRecommendationBtn" class="btn btn-success train-model-btn">
+                <i class="bi bi-music-note-beamed"></i> Ver recomendações
+              </button>
+            </div>
+            <div class="all-users-listened">
+              <h5 id="purchasesDiv" style="cursor: pointer;">
+                Dados de escuta de todos os usuários
+                <i id="purchasesArrow" class="bi bi-chevron-down"></i>
+              </h5>
+              <div id="allUsersListenedList" class="user-listened-data overflow-auto" style="max-height: 400px; display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Catálogo de músicas</h3>
+    <div class="row" id="trackList"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+  <script type="module" src="./src/index.js"></script>
+</body>
+</html>

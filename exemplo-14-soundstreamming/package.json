@@ -1,0 +1,17 @@
+{
+  "name": "soundstreamming-recommendations",
+  "version": "1.0.0",
+  "description": "Music streaming recommendation system with TensorFlow.js - suggest tracks based on user profile and listening history",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "browser-sync -w . --server --files 'index.html, style.css, data/*.json, src/**/*.js' --port 3001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["music", "streaming", "recommendation", "tensorflow", "javascript"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

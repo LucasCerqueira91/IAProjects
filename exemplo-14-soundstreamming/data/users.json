@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Ana Lima",
+    "age": 25,
+    "listenedTracks": [
+      { "id": 1, "name": "Blinding Lights", "artist": "The Weeknd", "genre": "pop" },
+      { "id": 2, "name": "Levitating", "artist": "Dua Lipa", "genre": "pop" },
+      { "id": 5, "name": "Good 4 U", "artist": "Olivia Rodrigo", "genre": "pop" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bruno Ferreira",
+    "age": 27,
+    "listenedTracks": [
+      { "id": 1, "name": "Blinding Lights", "artist": "The Weeknd", "genre": "pop" },
+      { "id": 4, "name": "Smooth", "artist": "Santana", "genre": "rock" },
+      { "id": 7, "name": "Uptown Funk", "artist": "Bruno Mars", "genre": "funk" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Camila Souza",
+    "age": 30,
+    "listenedTracks": [
+      { "id": 3, "name": "Flowers", "artist": "Miley Cyrus", "genre": "pop" },
+      { "id": 6, "name": "Shape of You", "artist": "Ed Sheeran", "genre": "pop" },
+      { "id": 9, "name": "Thinking Out Loud", "artist": "Ed Sheeran", "genre": "pop" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Diego Almeida",
+    "age": 22,
+    "listenedTracks": [
+      { "id": 4, "name": "Smooth", "artist": "Santana", "genre": "rock" },
+      { "id": 8, "name": "Smells Like Teen Spirit", "artist": "Nirvana", "genre": "rock" },
+      { "id": 10, "name": "Back in Black", "artist": "AC/DC", "genre": "rock" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Eduarda Nunes",
+    "age": 28,
+    "listenedTracks": [
+      { "id": 2, "name": "Levitating", "artist": "Dua Lipa", "genre": "pop" },
+      { "id": 7, "name": "Uptown Funk", "artist": "Bruno Mars", "genre": "funk" },
+      { "id": 11, "name": "Treasure", "artist": "Bruno Mars", "genre": "funk" }
+    ]
+  }
+]
